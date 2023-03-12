@@ -5,6 +5,8 @@
 -- 4.LIKE operators:
 -- 5.IN operators:
 -- 6.BETWEEN operators:
+-- 7.TOP operators:
+-- 8.ORDER operators:
 
 Create database school;
 use school;
@@ -72,4 +74,19 @@ select Student_name , Age from studentinfo where Student_name in ('Tushar') ;
 -- The between oprator select values with in a given rang.:
 
 select Student_name , Age from studentinfo where Age between 18 and 22 ;
+
+-- 7.TOP operators:
+
+-- With the help of TOP opretor we can easyly to find top 3 values:
+select * from studentinfo limit 3 ;
+
+-- 8.ORDER operators:
+
+-- With the help of ORDER  opretor we can easyly to find ascending and decending  values:
+
+-- ascending Order :
+select * from studentinfo order by student_name , Age;
+
+-- decending Order :
+select * from studentinfo order by student_name  DESC;
 
